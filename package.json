@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "start:dev": "rm -rf dist && gulp bundle_project && babel ./dist/app_bundle.jsx --out-file dist/build.js",
+    "start": "supervisor -n exit -w src -e jsx,js -x yarn start:dev & serve ./",
+    "build": "rm -rf dist && gulp bundle_project && babel ./dist/app_bundle.jsx -d dist && gulp build"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "serve": "^11.3.2",
+    "supervisor": "^0.12.0"
+  }
+}

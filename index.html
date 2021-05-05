@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <script>(function (a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y; h.start = 1 * new Date;
+            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 20000,
+            { 'GTM-WG5X9TQ': true });</script>
+    <!-- Anti-flicker fim -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WG5X9TQ');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="O Fliper é o App de Investimentos que consolida sua vida financeira em um só lugar. Acompanhe seus investimentos de forma automatizada e inteligente." />
+    <meta name="keywords"
+        content="investimento, investimentos, finanças, finanças pessoais, consolidação, consolidação de carteira, patrimônio, evolução, evolução de patrimônio, rentabilidade, ativos, carteira de ativos, rentabilização, consolidação automatizada, controle de investimentos, atualização automática, dinheiro, gastos, custos, controle de gastos, budget, fundos de investimentos, ações, bancos, corretoras, app de investimentos">
+    <meta name="facebook-domain-verification" content="lbd6exsh994bj09zg5hy0vif3ec4nd" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preload" href="assets/fonts/proxima.nova.regular.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/proxima.nova.bold.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/proxima.nova.extrabold.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/proxima.nova.light.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/proxima.nova.thin.ttf" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./dist/build.css" crossorigin="anonymous" />
+    <title>Fliper App | App de Investimentos que Centraliza Sua Vida Financeira!</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="screenresolution"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG5X9TQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="dist/build.js"></script>
+</body>
+
+</html>

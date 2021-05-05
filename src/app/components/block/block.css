@@ -1,0 +1,28 @@
+.block {
+    width: 100vw;
+    background: #fff;
+    margin-bottom: 200px;
+}
+
+.block.grey {
+    background: #E8EBF6;
+}
+
+.block-header {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background: #fff;
+}
+
+.block-bg {
+    width: 100vw; 
+    height: 90vh;
+    object-fit: fill;
+    object-position: top;
+}
+
+.block-bg-container {
+    position: absolute;
+    width: 100vw;
+    overflow-x: hidden;
+}
